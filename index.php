@@ -4,18 +4,17 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>AMTYGI</title>
-   <link rel="stylesheet" href="styl1.css">
 </head>
 <body>
    <header>
-      <h1>AMTYGI - Biuro podróży</h1>
+      <h1><img src="logo.png"> AMTYGI - Biuro podróży</h1>
    </header>
    <main>
       <h2>Zaloguj się</h2>
-      <hr><form method="post">
-         <input type="email" placeholder="Twój e-mail" name="mail">
-         <input type="password" placeholder="Twoje Hasło" name="haslo">
-         <input type="submit" value="Zaloguj się" name="nazwa">
+      <br><hr><br><form method="post">     
+         <input type="email" placeholder="Twój e-mail" name="mail"><br><br>
+         <input type="password" placeholder="Twoje Hasło" name="haslo"><br><br>
+         <input type="submit" value="Zaloguj się" name="nazwa"><br><br>
       </form>
       <?php
          if(isset($_POST["imie"]) && isset($_POST["pass"])){

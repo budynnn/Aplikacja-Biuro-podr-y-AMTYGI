@@ -6,6 +6,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>AMTYGI</title>
+   <link rel="stylesheet" href="styl_login_and_sign_in.css">
 </head>
 <body>
    <header>
@@ -13,11 +14,11 @@
    </header>
    <main>
       <h2>Zarejestruj się</h2>
-      <hr><form method="post">
-         <input type="text" placeholder="Twoja nazwa" name="nazwa">         
-         <input type="email" placeholder="Twój e-mail" name="mail">
-         <input type="password" placeholder="Twoje Hasło" name="haslo">
-         <input type="submit" value="Utwórz konto">
+      <hr><br><form method="post">
+         <input type="text" placeholder="Twoja nazwa" name="nazwa"><br><br>         
+         <input type="email" placeholder="Twój e-mail" name="mail"><br><br>
+         <input type="password" placeholder="Twoje Hasło" name="haslo"><br><br>
+         <input type="submit" value="Utwórz konto"><br><br>
       </form>
       <?php
                 if(isset($_POST["nazwa"]) && isset($_POST["mail"]) && isset($_POST["haslo"])){
