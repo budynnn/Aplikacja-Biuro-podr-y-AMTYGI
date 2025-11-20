@@ -4,7 +4,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>AMTYGI</title>
+<<<<<<< HEAD
    <link rel="stylesheet" href="styl_login_and_sign_in.css">
+=======
+   
+>>>>>>> 0df7547296b38b17619f5f937f47de4773dc6ccc
 </head>
 <body>
    <header>
