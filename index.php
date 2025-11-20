@@ -50,7 +50,7 @@
       setInterval(() => {
         index = (index + 1) % images.length;
         document.getElementById("slider").src = images[index];
-      }, 3000); 
+      }, 3000);
     </script></nav>
    <footer>
       <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>

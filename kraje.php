@@ -11,9 +11,13 @@
 <body>
 
 <header>
-    <a href="#" target="_self">Kraje warte zwiedzenia</a>
+    <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>    
+<!-- <a href="#" target="_self"></a>
+    <a href="#" target="_self"></a> -->
+    <a href="#" target="_self">Kraje</a>
     <a href="#" target="_self">Fiszki</a>
     <a href="#" target="_self">Kontakt</a>
+    <a href="index.php" target="_self" id="sigma">Wyloguj</a>
 </header>
 
 <main>
@@ -59,6 +63,8 @@ mysqli_close($polaczenie);
     });
 </script>
 
-<footer></footer>
+<footer>
+    
+</footer>
 </body>
 </html>
