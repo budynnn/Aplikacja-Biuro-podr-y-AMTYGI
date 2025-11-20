@@ -6,7 +6,12 @@
     <title>Kraje do wyboru</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <a href="" target="_self">Kraje warte zwiedzenia</a>
+        <a href="" target="_self">Fiszki</a>
+        <a href="" target="_self" >Kontakt</a>
+        <a href="" target="_self">Wyloguj</a>
+    </header>
     <main></main>
     <footer></footer>
 </body>
