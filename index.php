@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>AMTYGI</title>
+   <link rel="stylesheet" href="styl1.css">
 </head>
 <body>
    <header>
@@ -11,7 +12,7 @@
    </header>
    <main>
       <h2>Zaloguj się</h2>
-      <hr><form method="post">     
+      <hr><form method="post">
          <input type="email" placeholder="Twój e-mail" name="mail">
          <input type="password" placeholder="Twoje Hasło" name="haslo">
          <input type="submit" value="Zaloguj się" name="nazwa">
@@ -45,7 +46,7 @@
       setInterval(() => {
         index = (index + 1) % images.length;
         document.getElementById("slider").src = images[index];
-      }, 3000); 
+      }, 3000);
     </script></nav>
    <footer>
       <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>
