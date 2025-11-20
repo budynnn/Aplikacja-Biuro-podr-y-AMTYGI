@@ -10,17 +10,19 @@
 </head>
 <body>
    <header>
-      <h1>AMTYGI - Biuro podróży</h1>
+      <h1><img src="logo.png">AMTYGI - Biuro podróży</h1>
    </header>
    <main>
-      <h2>Zarejestruj się</h2>
-      <hr><br><form method="post">
-         <input type="text" placeholder="Twoja nazwa" name="nazwa"><br><br>         
-         <input type="email" placeholder="Twój e-mail" name="mail"><br><br>
-         <input type="password" placeholder="Twoje Hasło" name="haslo"><br><br>
-         <input type="submit" value="Utwórz konto"><br><br>
-      </form>
-      <?php
+        <section></section>
+        <div>
+            <h2>Zarejestruj się</h2>
+            <br><form method="post">
+                <input class="input" type="text" placeholder="Twoja nazwa" name="nazwa"><br><br>         
+                <input class="input" type="email" placeholder="Twój e-mail" name="mail"><br><br>
+                <input class="input" type="password" placeholder="Twoje Hasło" name="haslo"><br><br>
+                <input class="przycisk" type="submit" value="Utwórz konto"><br><br>
+            </form>
+            <?php
                 if(isset($_POST["nazwa"]) && isset($_POST["mail"]) && isset($_POST["haslo"])){
                     $plik = fopen("dane.txt", "w+");
                     $plik1 = fopen("dane1.txt", "w+");
@@ -44,6 +46,8 @@
                     }
                 }
             ?>
+        </div>
+        <section></section>
    </main>
    <nav><img id="slider" src="zdjecie5.jpg" width="600">
 
@@ -57,6 +61,7 @@
       }, 3000); 
     </script></nav>
    <footer>
+        <h3> Masz konto? <a href="index.php">Zaloguj się</a></h3>
    </footer>
 </body>
 </html>
