@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malta - AMTYGI</title>
+    <title>Wielka Brytania - AMTYGI</title>
     <link href="dlakazdegokraju.css" rel="stylesheet">
 </head>
 
@@ -20,28 +20,27 @@
 
 <div class="travel-block">
 
-
+    
     <aside class="images-container">
-        <div class="image-large" style="background-image: url('malta-blue-lagoon.jpg');"></div>
+        <div class="image-large" style="background-image: url('londyn.jpg');"></div>
         <div class="image-small">
-            <div style="background-image: url(' malta-valletta.jpg');"></div>
-            <div style="background-image: url('malta-mdina.jpg');"></div>
+            <div style="background-image: url('stonehenge.jpg');"></div>
+            <div style="background-image: url('edinburgh.jpg');"></div>
         </div>
     </aside>
 
-  
+    
     <aside class="flight-info">
-        <p><strong>Czas lotu:</strong> 2h 45min</p>
+        <p><strong>Czas lotu:</strong> 2h 20min</p>
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>
 
     
     <aside class="description">
-        <h2>Malta</h2>
-        <p>Malta to słoneczna wyspa na Morzu Śródziemnym, słynąca z pięknych plaż,
-           historycznych miasteczek i krystalicznie czystej wody. Valletta, Mdina
-           oraz Blue Lagoon to tylko kilka z atrakcji, które zachwycają turystów
-           z całego świata. Idealne miejsce na wakacje pełne relaksu i zwiedzania.</p>
+        <h2>Wielka Brytania</h2>
+        <p>Wielka Brytania to kraj o bogatej historii i niezwykłych zabytkach. Od kultowego Londynu,
+           przez tajemnicze Stonehenge, aż po klimatyczne ulice Edynburga — każdy region oferuje
+           unikalne doświadczenia i niezapomniany klimat.</p>
     </aside>
 
 </div>
