@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kraje do wyboru</title>
+    <title>Kraje</title>
     <link href="styles.css" rel="stylesheet">
-
-
 </head>
 <body>
 
 <header>
-    <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>    
-<!-- <a href="#" target="_self"></a>
-    <a href="#" target="_self"></a> -->
+    <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
     <a href="kraje.php" target="_self">Kraje</a>
     <a href="fiszki.php" target="_self">Fiszki</a>
     <a href="kontakt.php" target="_self">Kontakt</a>
@@ -31,9 +27,11 @@ while($wiersz = mysqli_fetch_array($wynik)) {
 
     echo "
     <div>
-        <div class='kraj' style=\"background-image:url('".$wiersz['zdjecie']."')\">
+        <a class='kraj'
+           href='".$wiersz['nazwa'].".php'
+           style=\"background-image:url('".$wiersz['zdjecie']."')\">
             ".$wiersz['nazwa']."
-        </div>
+        </a>
 
         <div class='info'>
             <p>".$wiersz['opis']."</p>
@@ -47,27 +45,8 @@ mysqli_close($polaczenie);
 ?>
 </main>
 
-<script>
-    const kraje = document.querySelectorAll(".kraj");
-
-    kraje.forEach((krajEl) => {
-        krajEl.addEventListener("click", () => {
-            const info = krajEl.nextElementSibling;
-
-            if (info.style.display === "block") {
-                info.style.display = "none";
-            } else {
-                info.style.display = "block";
-            }
-        });
-    });
-</script>
-
-
-
-
 <footer>
-    
+
 </footer>
 </body>
 </html>
