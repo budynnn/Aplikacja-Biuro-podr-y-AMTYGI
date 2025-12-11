@@ -94,3 +94,48 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+.kontakt {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6D2323;
+    background: #D1B893; /* ---> ciemny beż */
+    border-top: 4px solid #6D2323;
+    border-bottom: 4px solid #6D2323;
+}
+
+.kontakt h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #6D2323;
+}
+
+.kontakt-grid {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.kontakt-box {
+    width: 260px;
+    background: #E5D0AC; 
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+.ikonka {
+    width: 90px;
+    height: 90px;
+    background: #6D2323; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+.ikonka svg {
+    width: 42px;
+    height: 42px;
+}
