@@ -1,0 +1,121 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background: #FEF9E1; 
+}
+
+h1{
+    color: #E5D0AC;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #000000; 
+    text-align: center;
+}
+
+header a {
+    color: #E5D0AC; 
+    text-decoration: none;
+    font-size: 50px;
+    padding: 5px 100px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+header a:hover {
+    background: #6D2323; 
+    color: #FEF9E1; 
+}
+
+footer {
+    background: #000000;
+    padding: 60px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.travel-block {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+
+.images-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.image-large {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.image-small {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.image-small div {
+    width: 100%;
+    height: 165px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+
+.flight-info {
+    background: #E5D0AC;
+    padding: 20px;
+    border-radius: 12px;
+    color: #6D2323;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.description {
+    grid-column: span 2;
+    background: #E5D0AC;
+    padding: 20px;
+    border-radius: 12px;
+    color: #6D2323;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 800px) {
+    .travel-block {
+        grid-template-columns: 1fr;
+    }
+
+    .image-large, .image-small div {
+        height: 200px;
+    }
+
+    .flight-info {
+        margin-top: 20px;
+    }
+}
