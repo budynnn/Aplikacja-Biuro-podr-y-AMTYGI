@@ -20,7 +20,6 @@
 
 <div class="travel-block">
 
-   
     <aside class="images-container">
         <div class="image-large" style="background-image: url('szwecja-sztokholm.jpg');"></div>
         <div class="image-small">
@@ -29,25 +28,71 @@
         </div>
     </aside>
 
-
+ 
     <aside class="flight-info">
         <p><strong>Czas lotu:</strong> 2h 30min</p>
+
+        <p><strong>Pogoda Sztokholm:</strong> <span id="weather-stockholm">Ładowanie...</span></p>
+
+        <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 10 000 zł / tydzień</p>
+
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>
 
-
+   
     <aside class="description">
         <h2>Szwecja</h2>
-        <p>Szwecja to kraj nowoczesności, spokoju i zachwycającej natury. 
-           Stolica Sztokholm przyciąga kanałami i malowniczą starówką, 
-           Laponia oferuje spotkania z zorzami polarnymi, 
-           a Malmö zachwyca architekturą i nadmorskim klimatem. 
-           Idealne miejsce dla osób ceniących naturę i skandynawski styl życia.</p>
+        <p>
+            Szwecja to kraj nowoczesności, spokoju i zachwycającej natury. 
+            Sztokholm przyciąga kanałami, architekturą i malowniczą starówką, 
+            Laponia oferuje niesamowite widoki zorz polarnych, 
+            a Malmö zachwyca nadmorskim klimatem i nowoczesną architekturą.
+        </p>
+        <p>
+            Idealne miejsce dla osób ceniących naturę, aktywny wypoczynek
+            i skandynawski styl życia.
+        </p>
     </aside>
 
 </div>
 
 <footer></footer>
+
+
+<script>
+    const weatherDescriptions = {
+        0: "Bezchmurnie",
+        1: "Prawie bezchmurnie",
+        2: "Częściowo pochmurno",
+        3: "Pochmurno",
+        51: "Mżawka",
+        61: "Lekki deszcz",
+        71: "Śnieg",
+        95: "Burza"
+    };
+
+    async function loadWeatherStockholm() {
+        const span = document.getElementById("weather-stockholm");
+
+        try {
+            const response = await fetch(
+                "https://api.open-meteo.com/v1/forecast?latitude=59.3293&longitude=18.0686&current_weather=true"
+            );
+
+            const data = await response.json();
+            const temp = data.current_weather.temperature;
+            const code = data.current_weather.weathercode;
+            const desc = weatherDescriptions[code] || "Warunki zmienne";
+
+            span.textContent = `${temp}°C, ${desc}`;
+        } catch {
+            span.textContent = "Błąd pobierania";
+        }
+    }
+
+    loadWeatherStockholm();
+</script>
 
 </body>
 </html>
