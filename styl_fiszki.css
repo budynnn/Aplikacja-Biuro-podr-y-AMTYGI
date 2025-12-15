@@ -1,29 +1,72 @@
-*{}
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background: #FEF9E1; 
+}
+h1{
+    color: #E5D0AC;
+    text-align: center;
+}
 header{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #000000; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
-    background-color: #A31D1D;
+    height: 20%;
+    z-index: 50;
+    padding-left: 85px;
+}
+header a {
+    color: #E5D0AC; 
+    text-decoration: none;
+    font-size: 50px;
+    padding: 5px 100px;
+    border-radius: 5px;
+    text-align: right;
+}
+header a:hover {
+    background: #6D2323; 
+    color: #FEF9E1; 
 }
 nav{
     width: 60%;
-    height: 80%;
+    height: 70%;
     position: absolute;
-    top: 10%;
-    left: 0;
+    top: 20%;
+    left: -50%;
     background-color: #E5D0AC;
     z-index: 100;
+    transition: 0.3s;
 }
-nav.close{
-    width: 15%;
+nav.open{
+    left: 0;
+}
+aside{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: -90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    transition: 0.3s;
+}
+aside.open{
+    left: 0;
+}
+ul{
+    width: 50%;
 }
 main{
-    width: 85%;
-    height: 80%;
+    width: 100%;
+    height: 70%;
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: 0;
      background-color: #FEF9E1;
      z-index: 50;
@@ -31,7 +74,7 @@ main{
 footer{
     width: 100%;
     height: 10%;
-    background-color: #A31D1D;
+    background-color: #000000;
     position: absolute;
     top: 90%;
     left: 0;
