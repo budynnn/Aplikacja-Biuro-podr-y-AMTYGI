@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 }
 
 // ===== ZAPYTANIE =====
-$sql = "SELECT id, eng, pl FROM fiszki1 ORDER BY RAND() LIMIT 1";
+$sql = "SELECT id, eng, pl FROM fiszki2 ORDER BY RAND() LIMIT 1";
 $result = $conn->query($sql);
 
 if (!$result) {

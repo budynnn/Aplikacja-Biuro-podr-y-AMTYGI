@@ -10,19 +10,18 @@
     <header>
         <h1><img src="logo_bezowe.png"> AMTYGI - Biuro <br>podróży</h1>
         <a href="kraje.php" target="_self">Kraje</a>
-        <h1 id="test">jajo</h1>
     </header>
-    <aside id="tlo" class="open">sigma</aside>
+    <aside id="tlo" class="open"></aside>
     <nav id="nav" class="open">
         <ul>
-            <li id="li_1">1</li>
-            <li id="li_2">2</li>
-            <li id="li_3">3</li>
-            <li id="li_4">4</li>
-            <li id="li_5">5</li>
-            <li id="li_6">6</li>
+            <li id="li_1">Podstawowe słówka</li>
+            <li id="li_2">Państwa i stolice</li>
+            <li id="li_3">Podróż</li>
+            <li id="li_4">Jedzenie</li>
+            <li id="li_5">Podstawowe zwroty</li>
         </ul>
         <script>
+            let k = 1;
             const nav = document.getElementById("nav");
             const tlo = document.getElementById("tlo");
             const li_1 =document.getElementById("li_1");
@@ -48,50 +47,209 @@
                 fetch("fiszki1.php")
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data);
-                        console.log(data[0].name);
-                    });
+                        const eng = data[0].eng;
+                        const pl = data[0].pl;
+                        question.textContent = pl;
+                        answer.textContent = eng;
+                        });
+                k=1;
+                    
             });
             li_2.addEventListener("click" , () => {
-                if(nav.classList.contains("close")){
-
-                }else{
-                    nav.classList.add("close");
+                if(nav.classList.contains("open")){
+                    nav.classList.remove("open");
+                    tlo.classList.remove("open");
                 }
+                fetch("fiszki2.php")
+                    .then(res => res.json())
+                    .then(data => {
+                        const eng = data[0].eng;
+                        const pl = data[0].pl;
+                        question.textContent = pl;
+                        answer.textContent = eng;
+                        });
+                k=2;
             });
             li_3.addEventListener("click" , () => {
-                if(nav.classList.contains("close")){
-
-                }else{
-                    nav.classList.add("close");
+                if(nav.classList.contains("open")){
+                    nav.classList.remove("open");
+                    tlo.classList.remove("open");
                 }
+                fetch("fiszki3.php")
+                    .then(res => res.json())
+                    .then(data => {
+                        const eng = data[0].eng;
+                        const pl = data[0].pl;
+                        question.textContent = pl;
+                        answer.textContent = eng;
+                        });
+                k=3;
             });
             li_4.addEventListener("click" , () => {
-                if(nav.classList.contains("close")){
-
-                }else{
-                    nav.classList.add("close");
+                if(nav.classList.contains("open")){
+                    nav.classList.remove("open");
+                    tlo.classList.remove("open");
                 }
+                fetch("fiszki4.php")
+                    .then(res => res.json())
+                    .then(data => {
+                        const eng = data[0].eng;
+                        const pl = data[0].pl;
+                        question.textContent = pl;
+                        answer.textContent = eng;
+                        });
+                k=4;
             });
             li_5.addEventListener("click" , () => {
-                if(nav.classList.contains("close")){
-
-                }else{
-                    nav.classList.add("close");
+                if(nav.classList.contains("open")){
+                    nav.classList.remove("open");
+                    tlo.classList.remove("open");
                 }
+                fetch("fiszki5.php")
+                    .then(res => res.json())
+                    .then(data => {
+                        const eng = data[0].eng;
+                        const pl = data[0].pl;
+                        question.textContent = pl;
+                        answer.textContent = eng;
+                        });
+                k=5;
             });
-            li_6.addEventListener("click" , () => {
-                if(nav.classList.contains("close")){
-                    console.log("sigma1");
-                }else{
-                    console.log("sigma2");
-                    nav.classList.add("close");
-                }
-            });
-            
         </script>
     </nav>
-    <main></main>
+    <main id="main">
+        <div id="flashcard" class="card">
+            <div id="question" class="front">Ładowanie...</div>
+            <div id="answer" class="back"></div>
+        </div>
+    </main>
+    <script>
+        const flashcard = document.getElementById("flashcard");
+        const question = document.getElementById("question");
+        const answer = document.getElementById("answer");
+        const mainContainer = document.getElementById("main");
+
+        flashcard.addEventListener("click", () => {
+            flashcard.classList.toggle("flipped");
+        });
+
+        // kliknięcie w main (poza fiszką) -> przesuwa fiszkę
+        mainContainer.addEventListener("click", (e) => {
+            if (flashcard.contains(e.target)) return;
+            switch(k){
+                case 1:
+                    flashcard.classList.add("slide-out-left");
+
+                    setTimeout(() => {
+                        fetch("fiszki1.php")
+                            .then(res => res.json())
+                            .then(data => {
+                                const randIndex = Math.floor(Math.random() * data.length);
+                                const card = data[randIndex];
+
+                                question.textContent = card.pl;
+                                answer.textContent = card.eng;
+
+                                flashcard.classList.remove("slide-out-left", "flipped");
+                                flashcard.classList.add("slide-in-right");
+
+                                setTimeout(() => {
+                                    flashcard.classList.remove("slide-in-right");
+                                }, 500);
+                            });
+                    }, 500);
+                    break;
+                case 2:
+                    flashcard.classList.add("slide-out-left");
+
+                    setTimeout(() => {
+                        fetch("fiszki2.php")
+                            .then(res => res.json())
+                            .then(data => {
+                                const randIndex = Math.floor(Math.random() * data.length);
+                                const card = data[randIndex];
+
+                                question.textContent = card.pl;
+                                answer.textContent = card.eng;
+
+                                flashcard.classList.remove("slide-out-left", "flipped");
+                                flashcard.classList.add("slide-in-right");
+
+                                setTimeout(() => {
+                                    flashcard.classList.remove("slide-in-right");
+                                }, 500);
+                            });
+                    }, 500);
+                    break;
+                case 3:
+                    flashcard.classList.add("slide-out-left");
+
+                    setTimeout(() => {
+                        fetch("fiszki3.php")
+                            .then(res => res.json())
+                            .then(data => {
+                                const randIndex = Math.floor(Math.random() * data.length);
+                                const card = data[randIndex];
+
+                                question.textContent = card.pl;
+                                answer.textContent = card.eng;
+
+                                flashcard.classList.remove("slide-out-left", "flipped");
+                                flashcard.classList.add("slide-in-right");
+
+                                setTimeout(() => {
+                                    flashcard.classList.remove("slide-in-right");
+                                }, 500);
+                            });
+                    }, 500);
+                    break;
+                case 4:
+                    flashcard.classList.add("slide-out-left");
+
+                    setTimeout(() => {
+                        fetch("fiszki4.php")
+                            .then(res => res.json())
+                            .then(data => {
+                                const randIndex = Math.floor(Math.random() * data.length);
+                                const card = data[randIndex];
+
+                                question.textContent = card.pl;
+                                answer.textContent = card.eng;
+
+                                flashcard.classList.remove("slide-out-left", "flipped");
+                                flashcard.classList.add("slide-in-right");
+
+                                setTimeout(() => {
+                                    flashcard.classList.remove("slide-in-right");
+                                }, 500);
+                            });
+                    }, 500);
+                    break;
+                case 5:
+                    flashcard.classList.add("slide-out-left");
+
+                    setTimeout(() => {
+                        fetch("fiszki5.php")
+                            .then(res => res.json())
+                            .then(data => {
+                                const randIndex = Math.floor(Math.random() * data.length);
+                                const card = data[randIndex];
+
+                                question.textContent = card.pl;
+                                answer.textContent = card.eng;
+
+                                flashcard.classList.remove("slide-out-left", "flipped");
+                                flashcard.classList.add("slide-in-right");
+
+                                setTimeout(() => {
+                                    flashcard.classList.remove("slide-in-right");
+                                }, 500);
+                            });
+                    }, 500);
+                    break;
+            }
+        });
+    </script>
     <footer></footer>
 </body>
 </html>
