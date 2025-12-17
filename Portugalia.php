@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Lizbona:</strong> <span id="weather-lisbon">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1600 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 11 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1600 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 11 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

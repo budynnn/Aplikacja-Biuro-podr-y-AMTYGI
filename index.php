@@ -12,6 +12,7 @@
          <header>
             <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
          </header>
+         <br><Br><BR>
          
 
          <main>
@@ -46,10 +47,11 @@
             <section></section>
          </main>
          
-         
+          <section>            <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>
+</section>
    
          <footer>
-            <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>
+           
          </footer>
          
       </div>

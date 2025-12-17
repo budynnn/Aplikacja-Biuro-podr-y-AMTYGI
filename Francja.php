@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Paryż:</strong> <span id="weather-paris">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1500 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 18 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1500 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 18 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

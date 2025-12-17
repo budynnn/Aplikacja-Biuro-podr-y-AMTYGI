@@ -34,8 +34,8 @@
 
         <p><strong>Pogoda Wiedeń:</strong> <span id="weather-wien">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 9800 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 9800 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>
