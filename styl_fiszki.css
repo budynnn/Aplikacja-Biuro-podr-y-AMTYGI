@@ -72,8 +72,8 @@ main{
     position: absolute;
     top: 20%;
     right: 0;
-     background-color: #FEF9E1;
-     z-index: 50;
+    background-color: #FEF9E1;
+    z-index: 50;
 }
 footer{
     width: 100%;
@@ -113,17 +113,18 @@ li:hover{
     background-color: #f9f9f9;
 }
 .sigma{
-    height: 20%;
+    height: 19%;
     width: 30%;
-    background-color: #6D2323;
+    background-color: black;
     margin: 50px 30px 50px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     border-radius: 30px;
-    border: #6D2323 solid 5px;
+    border: black solid 5px;
     text-align: center;
+    color: #E5D0AC;
 }
 .sigma:hover{
     background-color: #A31D1D;
