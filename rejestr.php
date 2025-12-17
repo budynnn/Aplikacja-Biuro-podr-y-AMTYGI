@@ -7,10 +7,9 @@
 <link rel="stylesheet" href="styl_login_and_sign_in.css">
 </head>
 <body>
-    <div class="aldiv">
-        <div class="col1">
-            <h1><img src="logo.png"> AMTYGI - Biuro podróży</h1>
-            
+    <header>
+        <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
+    </header>
 
             <main>
                 <section></section>
@@ -24,22 +23,18 @@
                     </form>
                     <?php
                         if(isset($_POST["nazwa"]) && isset($_POST["mail"]) && isset($_POST["haslo"])){
-                            $plik = fopen("dane.txt", "w+");
-                            $plik1 = fopen("dane1.txt", "w+");
                             $nazwa = $_POST["nazwa"];
                             $mail = $_POST["mail"];
                             $pass = $_POST["haslo"];
-                            if(strlen($pass) == 0 || strlen($logi) == 0 || strlen($mail)){
+                            if(strlen($pass) == 0 || strlen($nazwa) == 0 || strlen($mail)){
                                 echo "Uzupełnij dane!";
                             }
                             elseif(strlen($pass) < 8){
                                 echo "Za krótkie hasło";
                             }
                             else{
-                                fputs($plik1, $pass);
-                                fputs($plik, $logi);
                                 $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
-                                $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`, 'email') VALUES('$logi', '$pass', '$mail')";
+                                $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`, 'email') VALUES('$nazwa', '$pass', '$mail')";
                                 $wynik = mysqli_query($polaczenie, $zapytanie);
                                 header('location:kraje.php');
                                 mysqli_close($polaczenie); 
@@ -49,12 +44,8 @@
                 </div>
                 <section></section>
             </main>
-            <footer>
-                <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>
-            </footer>
             
-        </div>
-        <div class="col2">
+        
             <nav><img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
                 <script>
                 const images = ["zdjecia/zdjecia_rejestr/Francja.jpg","zdjecia/zdjecia_rejestr/Portugalia.jpg",
@@ -69,8 +60,10 @@
                 }, 3000);
                 </script>
             </nav>
+            <footer>
+                <h3>Masz konto? <a href="index.php">Zaloguj się</a></h3>
+            </footer>
             
-        </div>
-    </div>
+    
 </body>
 </html>

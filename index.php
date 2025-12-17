@@ -7,11 +7,9 @@
    <link rel="stylesheet" href="styl_login_and_sign_in.css">
 </head>
 <body>
-   <div class="aldiv">
-      <div class="col1">
-         <header>
-            <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
-         </header>
+   <header>
+      <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
+   </header>
          
 
          <main>
@@ -25,14 +23,10 @@
                </form>
                <?php
                   if(isset($_POST["imie"]) && isset($_POST["pass"])){
-                     $plik = fopen("dane.txt", "w+");
-                     $plik1 = fopen("dane1.txt", "w+");
-                     $logi = $_POST["email"];
+                     $mail = $_POST["email"];
                      $pass = $_POST["haslo"];
-                     fputs($plik, $logi);
-                     fputs($plik1, $pass);
                      $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
-                     $zapytanie = "SELECT nazwa FROM uzytkownicy WHERE haslo = '$pass' AND nazwa = '$logi';";
+                     $zapytanie = "SELECT nazwa FROM uzytkownicy WHERE haslo = '$pass' AND email = '$mail';";
                      $wynik = mysqli_query($polaczenie, $zapytanie);
                      if ($wynik->num_rows > 0) {
                         header('location:kraje.php');
@@ -45,17 +39,7 @@
             </div>
             <section></section>
          </main>
-         
-         
-   
-         <footer>
-            <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>
-         </footer>
-         
-      </div>
-      <div class="col2">
          <nav>
-               <br><br><br><br><br><br>
          <img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
             <script>
                const images = ["zdjecia/zdjecia_rejestr/Francja.jpg","zdjecia/zdjecia_rejestr/Portugalia.jpg",
@@ -70,8 +54,8 @@
                }, 3000);
             </script>
          </nav>
-         
-      </div>
-   </div>
+         <footer>
+            <h3>Nie masz konta? <a href="rejestr.php" >Zarejestuj się</a></h3>
+         </footer>
 </body>
 </html>
