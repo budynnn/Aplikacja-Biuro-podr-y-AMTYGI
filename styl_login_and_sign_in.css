@@ -8,30 +8,24 @@ h1{
    color: #E5D0AC;
 }
 header{
+   border-radius: 10px;
    margin: 0;
    height: 140px;
    width: 100%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   display: flex;
+   float: left;
    align-items: center;
-   padding: 0 24px;
+   padding: 10px 34px;
    background-color: black;
-   border-radius: 0;
    box-sizing: border-box;
-   z-index: 1000;
 }
 footer{
+   border-radius: 10px;
+   float: left;
    margin: 0;
-   height: 60px;
+   height: 100px;
    width: 100%;
-   position: fixed;
-   left: 0;
-   bottom: 0;
    background-color: #000;
    box-sizing: border-box;
-   z-index: 1000;
    padding: 10px 24px;
    color: #fff;
 }
@@ -39,14 +33,14 @@ main{
    margin-left: 30px;
    padding-top: 100px;
    height:600px;
-   width:100%;
+   width:45%;
    text-align: center;
    float:left;
 }
 nav{
    margin-left: 30px;
    height:880px;
-   width:95%;
+   width:45%;
    float: left;
 }
 section {
@@ -85,30 +79,8 @@ section {
 a{
    color:#A31D1D;
 }
-.aldiv{
-   display: flex;
-   width: 1920px;
-   height: 1020px;
+
+.slider{
+   border: 1px, solid, black;
+   
 }
-.col1{
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: column;
-   justify-content: center;
-   align-content: space-around;
-   align-items: flex-start;
-   margin-left: 50px;
-   width: 860px;
-   height: 880px;
-}
-.col2{
-   padding-right: 00px;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: flex-end;
-   flex-wrap: nowrap;
-   width: 860px;
-   height: 880px;
-}
-aside{}

@@ -93,6 +93,23 @@ footer p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    max-height: 300px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.flight-info::-webkit-scrollbar {
+    width: 10px;
+}
+.flight-info::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+.flight-info::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
 }
 
 
