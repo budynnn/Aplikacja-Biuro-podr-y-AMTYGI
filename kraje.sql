@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2025 at 06:32 PM
+-- Generation Time: Dec 17, 2025 at 05:53 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -691,6 +691,19 @@ INSERT INTO `kraje` (`id`, `nazwa`, `opis`, `czas_lotu`, `zdjecie`) VALUES
 (14, 'Holandia', 'Holandia to kraj wiatraków, tulipanów i rowerów. Amsterdam jest pełen uroku, a malownicze miasteczka jak Giethoorn przyciągają turystów swoją idylliczną atmosferą.', '1h 40m', 'flags/nl.svg'),
 (15, 'Austria', 'Austria to kraj, który zachwyca miłośników sztuki, muzyki i przyrody. Wiedeń to miasto cesarzy, z przepięknymi pałacami, a Alpy austriackie oferują wspaniałe warunki do narciarzy.', '1h 40m', 'flags/at.svg');
 
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `uzytkownicy`
+--
+
+CREATE TABLE `uzytkownicy` (
+  `id` int(11) NOT NULL,
+  `nazwa` varchar(40) DEFAULT NULL,
+  `haslo` varchar(30) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -732,6 +745,12 @@ ALTER TABLE `kraje`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeksy dla tabeli `uzytkownicy`
+--
+ALTER TABLE `uzytkownicy`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -770,6 +789,12 @@ ALTER TABLE `fiszki5`
 --
 ALTER TABLE `kraje`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `uzytkownicy`
+--
+ALTER TABLE `uzytkownicy`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

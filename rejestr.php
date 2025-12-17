@@ -29,7 +29,7 @@
                             $nazwa = $_POST["nazwa"];
                             $mail = $_POST["mail"];
                             $pass = $_POST["haslo"];
-                            if(strlen($pass) == 0 || strlen($logi) == 0 ){
+                            if(strlen($pass) == 0 || strlen($logi) == 0 || strlen($mail)){
                                 echo "Uzupełnij dane!";
                             }
                             elseif(strlen($pass) < 8){
@@ -39,7 +39,7 @@
                                 fputs($plik1, $pass);
                                 fputs($plik, $logi);
                                 $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
-                                $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`) VALUES('$logi', '$pass')";
+                                $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`, 'email') VALUES('$logi', '$pass', '$mail')";
                                 $wynik = mysqli_query($polaczenie, $zapytanie);
                                 header('location:kraje.php');
                                 mysqli_close($polaczenie); 
