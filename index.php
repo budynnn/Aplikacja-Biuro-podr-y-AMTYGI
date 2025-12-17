@@ -29,7 +29,7 @@
                      $pass = $_POST["haslo"];
                      fputs($plik, $logi);
                      fputs($plik1, $pass);
-                     $polaczenie = mysqli_connect("localhost", "root", "", "forumZdjec");
+                     $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
                      $zapytanie = "SELECT nazwa FROM uzytkownicy WHERE haslo = '$pass' AND nazwa = '$logi';";
                      $wynik = mysqli_query($polaczenie, $zapytanie);
                      if ($wynik->num_rows > 0) {

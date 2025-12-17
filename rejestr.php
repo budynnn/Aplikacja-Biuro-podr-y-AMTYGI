@@ -38,7 +38,7 @@
                             else{
                                 fputs($plik1, $pass);
                                 fputs($plik, $logi);
-                                $polaczenie = mysqli_connect("localhost", "root", "", "forumZdjec");
+                                $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
                                 $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`) VALUES('$logi', '$pass')";
                                 $wynik = mysqli_query($polaczenie, $zapytanie);
                                 header('location:kraje.php');
