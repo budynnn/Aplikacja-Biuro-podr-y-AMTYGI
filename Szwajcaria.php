@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Zurych:</strong> <span id="weather-zurich">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 2200 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 25 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 2200 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 25 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

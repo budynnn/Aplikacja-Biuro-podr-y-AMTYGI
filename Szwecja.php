@@ -34,8 +34,8 @@
 
         <p><strong>Pogoda Sztokholm:</strong> <span id="weather-stockholm">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 10 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 10 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

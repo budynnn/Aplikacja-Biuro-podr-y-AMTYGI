@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Stambuł:</strong> <span id="weather-istanbul">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 14 500 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 14 500 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

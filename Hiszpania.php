@@ -36,8 +36,8 @@
         <p><strong>Pogoda Madryt:</strong> <span id="weather-madrid">Ładowanie...</span></p>
 
         <p><strong>Linie lotnicze:</strong> LOT, Ryanair, Iberia</p>
-        <p><strong>Najtańszy hotel:</strong> od 1300 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 11 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1300 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 11 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

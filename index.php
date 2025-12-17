@@ -10,6 +10,12 @@
    <header>
       <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
    </header>
+   <div class="aldiv">
+      <div class="col1">
+         <header>
+            <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
+         </header>
+         <br><Br><BR>
          
 
          <main>
@@ -39,6 +45,17 @@
             </div>
             <section></section>
          </main>
+         
+          <section>            <h3>Nie masz konta? <a href="rejestr.php">Zarejestuj się</a></h3>
+</section>
+   
+         <footer>
+           
+         </footer>
+         
+      </div>
+      <div class="col2">
+
          <nav>
          <img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
             <script>

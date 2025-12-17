@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Londyn:</strong> <span id="weather-london">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1700 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 20 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1700 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 20 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

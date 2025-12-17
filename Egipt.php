@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Kair:</strong> <span id="weather-cairo">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1500 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 12 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1500 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 12 000 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

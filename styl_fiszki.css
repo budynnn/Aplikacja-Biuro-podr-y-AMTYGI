@@ -18,8 +18,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 20%;
-    z-index: 50;
+    height: 140px;
+    z-index: 510;
     padding-left: 85px;
 }
 header a {
@@ -36,10 +36,10 @@ header a:hover {
 }
 nav{
     width: 60%;
-    height: 75%;
+    height: 80%;
     position: absolute;
-    top: 20%;
-    left: -50%;
+    top: 140px;
+    left: -55%;
     background-color: #E5D0AC;
     z-index: 100;
     transition: 0.3s;
@@ -51,11 +51,11 @@ nav.open{
     left: 0;
 }
 aside{
-    height: 75%;
+    height: 80%;
     width: 100%;
     position: absolute;
-    top: 20%;
-    left: -90%;
+    top: 140px;
+    left: -95%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
     transition: 0.3s;
@@ -68,19 +68,19 @@ ul{
 }
 main{
     width: 100%;
-    height: 75%;
+    height: 80%;
     position: absolute;
-    top: 20%;
+    top: 140px;
     right: 0;
-     background-color: #FEF9E1;
-     z-index: 50;
+    background-color: #FEF9E1;
+    z-index: 50;
 }
 footer{
     width: 100%;
-    height: 5%;
+    height: 6%;
     background-color: #000000;
     position: absolute;
-    top: 95%;
+    top: 94%;
     left: 0;
 }
 ul{
@@ -113,17 +113,18 @@ li:hover{
     background-color: #f9f9f9;
 }
 .sigma{
-    height: 20%;
+    height: 19%;
     width: 30%;
-    background-color: #6D2323;
+    background-color: black;
     margin: 50px 30px 50px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     border-radius: 30px;
-    border: #6D2323 solid 5px;
+    border: black solid 5px;
     text-align: center;
+    color: #E5D0AC;
 }
 .sigma:hover{
     background-color: #A31D1D;
