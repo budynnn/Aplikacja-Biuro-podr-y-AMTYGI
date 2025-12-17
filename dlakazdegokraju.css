@@ -117,11 +117,15 @@ footer p {
     grid-column: span 2;
     background: #E5D0AC;
     padding: 20px;
+    height: 300px;
+    overflow:scroll;
     border-radius: 12px;
     color: #6D2323;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
+.a{
+   color:#A31D1D;
+}
 
 @media (max-width: 800px) {
     .travel-block {
