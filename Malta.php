@@ -35,8 +35,8 @@
 
         <p><strong>Pogoda Valletta:</strong> <span id="weather-valletta">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1800 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 12 500 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1800 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 12 500 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

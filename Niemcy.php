@@ -34,8 +34,8 @@
         
         <p><strong>Pogoda Berlin:</strong> <span id="weather-berlin">Ładowanie...</span></p>
 
-        <p><strong>Najtańszy hotel:</strong> od 1100 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 10 500 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1100 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 10 500 zł / tydzień</p> -->
 
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>

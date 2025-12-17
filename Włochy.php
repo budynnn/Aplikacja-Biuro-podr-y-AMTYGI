@@ -37,8 +37,8 @@
         <p><strong>Pogoda Rzym:</strong> <span id="weather-rome">Ładowanie...</span></p>
 
         <p><strong>Linie lotnicze:</strong> LOT, WizzAir, Ryanair</p>
-        <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
-        <p><strong>Najdroższy hotel:</strong> ok. 12 000 zł / tydzień</p>
+        <!-- <p><strong>Najtańszy hotel:</strong> od 1200 zł / tydzień</p>
+        <p><strong>Najdroższy hotel:</strong> ok. 12 000 zł / tydzień</p> -->
         <p>AMTYGI - Twoje zaufane biuro podróży.</p>
     </aside>
 
