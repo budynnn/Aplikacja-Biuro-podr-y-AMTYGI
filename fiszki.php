@@ -8,8 +8,11 @@
 </head>
 <body>
     <header>
-        <h1><img src="logo_bezowe.png"> AMTYGI - Biuro <br>podróży</h1>
+        <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
         <a href="kraje.php" target="_self">Kraje</a>
+        <a href="fiszki.php" target="_self">Fiszki</a>
+        <a href="kontakt.php" target="_self">Kontakt</a>
+        <a href="index.php" target="_self" id="sigma">Wyloguj</a>
     </header>
     <aside id="tlo" class="open"></aside>
     <nav id="nav" class="open">
