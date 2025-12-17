@@ -13,13 +13,19 @@
     </header>
     <aside id="tlo" class="open"></aside>
     <nav id="nav" class="open">
-        <ul>
+        <!-- <ul>
             <li id="li_1">Podstawowe słówka</li>
             <li id="li_2">Państwa i stolice</li>
             <li id="li_3">Podróż</li>
             <li id="li_4">Jedzenie</li>
             <li id="li_5">Podstawowe zwroty</li>
-        </ul>
+        </ul> -->
+        <div class="sigma" id="li_1">Podstawowe słówka</div>
+        <div class="sigma" id="li_2">Państwa i stolice</div>
+        <div class="sigma" id="li_3">Podróż</div>
+        <div class="sigma" id="li_4">Jedzenie</div>
+        <div class="sigma" id="li_5">Podstawowe zwroty</div>
+
         <script>
             let k = 1;
             const nav = document.getElementById("nav");
@@ -37,6 +43,12 @@
                         nav.classList.add("open");
                         tlo.classList.add("open");
                     }
+                }
+            });
+            tlo.addEventListener("click" , () => {
+                if(nav.classList.contains("open")){
+                    nav.classList.remove("open");
+                    tlo.classList.remove("open");
                 }
             });
             li_1.addEventListener("click" , () => {
