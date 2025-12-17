@@ -9,7 +9,9 @@
 <body>
    <div class="aldiv">
       <div class="col1">
-         <h1><img src="logo.png"> AMTYGI - Biuro podróży</h1>
+         <header>
+            <h1><img src="logo_bezowe.png"> AMTYGI - Biuro podróży</h1>
+         </header>
          
 
          <main>
@@ -43,7 +45,7 @@
             </div>
             <section></section>
          </main>
-
+         
          
    
          <footer>
@@ -52,7 +54,9 @@
          
       </div>
       <div class="col2">
-         <nav><img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
+         <nav>
+               <br><br><br><br><br><br>
+         <img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
             <script>
                const images = ["zdjecia/zdjecia_rejestr/Francja.jpg","zdjecia/zdjecia_rejestr/Portugalia.jpg",
                "zdjecia/zdjecia_rejestr/Czechy.jpg","zdjecia/zdjecia_rejestr/Wlochy.jpg",
