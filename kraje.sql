@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2025 at 05:53 PM
+-- Generation Time: Dec 18, 2025 at 01:54 AM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -681,7 +681,7 @@ INSERT INTO `kraje` (`id`, `nazwa`, `opis`, `czas_lotu`, `zdjecie`) VALUES
 (4, 'Turcja', 'Turcja łączy w sobie wschodnią i zachodnią kulturę, oferując egzotyczne plaże, zabytki antyczne, a także nowoczesne miasta jak Stambuł. Idealne miejsce na wakacje pełne przygód.', '3h 10m', 'flags/tr.svg'),
 (5, 'Francja', 'Francja to kraj miłości, sztuki i pysznej kuchni. Paryż, Lazurowe Wybrzeże, Prowansja — każdy znajdzie coś dla siebie. Warto odwiedzić katedry, zamki i oczywiście spróbować francuskich win.', '2h 30m', 'flags/fr.svg'),
 (6, 'Grecja', 'Grecja to kraj z niesamowitą historią, wspaniałymi plażami i wyspami pełnymi uroku. Ateny to centrum starożytnej cywilizacji, a wyspy jak Santorini czy Mykonos to prawdziwe perły turystyczne.', '2h 50m', 'flags/gr.svg'),
-(7, 'Wielka Brytania', 'Zjednoczone Królestwo to kraj o bogatej historii i kulturze. Londyn, Edynburg, wspaniałe zamki i muzea to tylko część atrakcji, jakie czekają na turystów.', '2h 15m', 'flags/gb.svg'),
+(7, 'Wielka_Brytania', 'Zjednoczone Królestwo to kraj o bogatej historii i kulturze. Londyn, Edynburg, wspaniałe zamki i muzea to tylko część atrakcji, jakie czekają na turystów.', '2h 15m', 'flags/gb.svg'),
 (8, 'Czechy', 'Czechy to kraj z przepiękną Pragą, wspaniałymi zamkami i piwem, które uważane jest za jedno z najlepszych na świecie. Idealne miejsce na weekendowy wypad.', '1h 10m', 'flags/cz.svg'),
 (9, 'Szwajcaria', 'Szwajcaria to kraj niesamowitych krajobrazów — od Alp po jeziora. To raj dla miłośników górskich wędrówek, a także kraj pełen luksusowych kurortów i wspaniałych miast jak Zurych czy Lucerna.', '2h 10m', 'flags/ch.svg'),
 (10, 'Egipt', 'Egipt to miejsce, które łączy fascynującą historię starożytnego świata z nowoczesnymi kurortami nad Morzem Czerwonym. Piramidy, świątynie i podwodne rafy koralowe — to tylko niektóre z atrakcji.', '4h 10m', 'flags/eg.svg'),
