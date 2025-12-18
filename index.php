@@ -12,16 +12,17 @@
    </header>
          <main>
             <section></section>
+            <br><br><br>
             <div class="maindiv">
                <h2>Zaloguj się</h2>
                <br><form method="post">     
                   <input class="input" type="email" placeholder="Twój e-mail" name="mail"><br><br>
                   <input class="input" type="password" placeholder="Twoje Hasło" name="haslo"><br><br>
-                  <input class="przycisk" type="submit" value="Zaloguj się" name="nazwa"><br><br>
+                  <input class="przycisk" type="submit" value="Zaloguj się" ><br><br>
                </form>
                <?php
-                  if(isset($_POST["imie"]) && isset($_POST["pass"])){
-                     $mail = $_POST["email"];
+                  if(isset($_POST["mail"]) && isset($_POST["haslo"])){
+                     $mail = $_POST["mail"];
                      $pass = $_POST["haslo"];
                      $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
                      $zapytanie = "SELECT nazwa FROM uzytkownicy WHERE haslo = '$pass' AND email = '$mail';";
@@ -41,7 +42,7 @@
          <nav>
          <img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
             <script>
-               const images = ["zdjecia/zdjecia_rejestr/Francja.jpg","zdjecia/zdjecia_rejestr/Portugalia.jpg",
+               const images = ["zdjecia/zdjecia_rejestr/Portugalia.jpg",
                "zdjecia/zdjecia_rejestr/Czechy.jpg","zdjecia/zdjecia_rejestr/Wlochy.jpg",
                "zdjecia/zdjecia_rejestr/Niemcy.jpg","zdjecia/zdjecia_rejestr/Grecja.jpg",
                "zdjecia/zdjecia_rejestr/Holandia.jpg",];

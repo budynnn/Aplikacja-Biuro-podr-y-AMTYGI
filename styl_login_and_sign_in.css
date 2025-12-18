@@ -2,13 +2,16 @@
    font-family: 'Trebuchet MS', sans-serif;
 }
 body{
-   background: #FEF9E1; 
+   background: #FEF9E1;
+   overflow: hidden;
 }
 h1{
    color: #E5D0AC;
 }
 header{
-   border-radius: 10px;
+   left: 0;
+   Top: 0;
+   position: absolute;
    margin: 0;
    height: 140px;
    width: 100%;
@@ -19,14 +22,16 @@ header{
    box-sizing: border-box;
 }
 footer{
-   border-radius: 10px;
    float: left;
    margin: 0;
    height: 100px;
    width: 100%;
+   left: 0;
+   bottom: 0;
+   position: absolute;
    background-color: #000;
-   box-sizing: border-box;
    padding: 10px 24px;
+   z-index: 1000;
    color: #fff;
 }
 main{

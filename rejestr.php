@@ -13,6 +13,7 @@
 
             <main>
                 <section></section>
+                <br><br><br>
                 <div class="maindiv">
                     <h2>Zarejestruj się</h2>
                     <br><form method="post">
@@ -25,16 +26,13 @@
                         if(isset($_POST["nazwa"]) && isset($_POST["mail"]) && isset($_POST["haslo"])){
                             $nazwa = $_POST["nazwa"];
                             $mail = $_POST["mail"];
-                            $pass = $_POST["haslo"];
-                            if(strlen($pass) == 0 || strlen($nazwa) == 0 || strlen($mail)){
-                                echo "Uzupełnij dane!";
-                            }
-                            elseif(strlen($pass) < 8){
+                            $haslo = $_POST["haslo"];
+                            if(strlen($haslo) < 8){
                                 echo "Za krótkie hasło";
                             }
                             else{
                                 $polaczenie = mysqli_connect("localhost", "root", "", "kraje");
-                                $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`, 'email') VALUES('$nazwa', '$pass', '$mail')";
+                                $zapytanie = "INSERT INTO `uzytkownicy` (`nazwa`, `haslo`, `email`) VALUES('$nazwa', '$haslo', '$mail');";
                                 $wynik = mysqli_query($polaczenie, $zapytanie);
                                 header('location:kraje.php');
                                 mysqli_close($polaczenie); 
@@ -48,7 +46,7 @@
         
             <nav><img id="slider" src="zdjecia/zdjecia_rejestr/Holandia.jpg" width="1000">
                 <script>
-                const images = ["zdjecia/zdjecia_rejestr/Francja.jpg","zdjecia/zdjecia_rejestr/Portugalia.jpg",
+                const images = ["zdjecia/zdjecia_rejestr/Portugalia.jpg",
                 "zdjecia/zdjecia_rejestr/Czechy.jpg","zdjecia/zdjecia_rejestr/Wlochy.jpg",
                 "zdjecia/zdjecia_rejestr/Niemcy.jpg","zdjecia/zdjecia_rejestr/Grecja.jpg",
                 "zdjecia/zdjecia_rejestr/Holandia.jpg",];
